@@ -1,0 +1,60 @@
+.about {
+  margin: 5% auto 0 auto;
+  height: 100vh;
+  width: 80vw;
+  background-color: var(--dark);
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__description {
+  margin-top: 12%;
+  opacity: 0.8;
+  width: 50%;
+}
+
+.about__description p {
+  font-weight: 300;
+}
+
+.about__title span {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.25rem;
+  z-index: 999;
+  position: relative;
+}
+
+.about__title span::before {
+  content: "";
+  position: absolute;
+  /* border-radius: 4px; */
+  background: var(--primary);
+  inset: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.about__title span:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.about__personal {
+  margin-top: 10%;
+  width: 60%;
+  opacity: 1;
+}
+
+.about__info {
+  text-align: justify;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__info span {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
