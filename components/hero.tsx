@@ -1,8 +1,9 @@
-import LinkList from './links/link-list';
+import React from 'react'
 
-import classes from "./hero.module.css";
+import LinkList from './links/link-list'
+import classes from './hero.module.css'
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <section className={classes.hero}>
       <p className={classes['hero__name--abs']}>Ola, eu sou</p>
@@ -10,7 +11,7 @@ const Hero = () => {
       <p className={classes['hero__occuppation']}>Desenvolvedor Web</p>
       <LinkList />
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

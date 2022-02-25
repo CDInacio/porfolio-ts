@@ -1,15 +1,16 @@
+import React from 'react'
 import Link from 'next/link'
 
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
 import { BsInstagram, BsGithub } from 'react-icons/bs'
 
-type NameProps = {
-  name: string
-}
+// type NameProps = {
+//   name: string
+// }
 
-const LinkItem = ({ name }: NameProps) => {
+const LinkItem: React.FC<{ name: String }> = props => {
   const SocialIcon = () => {
-    if (name === 'facebook')
+    if (props.name === 'facebook')
       return (
         <Link href="https://www.facebook.com/claudio.dantas.1253/" passHref>
           <a target="_blank">
@@ -17,7 +18,7 @@ const LinkItem = ({ name }: NameProps) => {
           </a>
         </Link>
       )
-    if (name === 'instagram')
+    if (props.name === 'instagram')
       return (
         <Link href="https://www.instagram.com/claudiovdsi/" passHref>
           <a target="_blank">
@@ -25,7 +26,7 @@ const LinkItem = ({ name }: NameProps) => {
           </a>
         </Link>
       )
-    if (name === 'github')
+    if (props.name === 'github')
       return (
         <Link href="https://github.com/CDInacio" passHref>
           <a target="_blank">
