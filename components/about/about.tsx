@@ -9,7 +9,7 @@ const About: React.FC = () => {
         <p className={classes['about__title']}>
           <span>Sobre mim</span>
         </p>
-        <div className={classes['about__image']}></div>
+        {/* <div className={classes['about__image']}>as</div> */}
       </div>
       <div className={classes['about__description']}>
         <p>

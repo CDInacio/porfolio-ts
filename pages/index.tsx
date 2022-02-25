@@ -4,8 +4,9 @@ import Head from 'next/head'
 
 import Hero from '../components/hero'
 import About from '../components/about/about'
+import Tecnologies from '../components/tecnologies/tecnologies'
 
-const HomePage: React.FC = () => {
+const HomePage: React.FC = ({ tecs }) => {
   return (
     <>
       <Head>
@@ -14,6 +15,7 @@ const HomePage: React.FC = () => {
       </Head>
       <Hero />
       <About />
+      <Tecnologies />
     </>
   )
 }

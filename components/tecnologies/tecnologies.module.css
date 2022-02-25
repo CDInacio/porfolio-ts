@@ -1,0 +1,98 @@
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.tecnologies {
+  display: grid;
+  grid-template-columns: 175px 175px 175px 175px 175px;
+  grid-template-rows: 148px 148px;
+  gap: 23px 23px;
+  grid-template-areas:
+    'html css . . .'
+    'react next node mongo figma';
+}
+
+.tecnologies__html5 {
+  position: relative;
+  background-color: var(--dark-medium);
+  grid-area: html;
+}
+
+.tecnologies__html5--img {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.tecnologies__css3 {
+  position: relative;
+  background-color: var(--dark-medium);
+  grid-area: css;
+}
+
+.tecnologies__css3--img {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.tecnologies__reactjs {
+  position: relative;
+  background-color: var(--dark-medium);
+  grid-area: react;
+}
+
+.tecnologies__reactjs--img {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.tecnologies__nextjs {
+  position: relative;
+  background-color: var(--dark-medium);
+  grid-area: next;
+}
+
+.tecnologies__nextjs--img {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.tecnologies__mongodb {
+  position: relative;
+  background-color: var(--dark-medium);
+  grid-area: mongo;
+}
+
+.tecnologies__mongodb--img {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.tecnologies__figma {
+  position: relative;
+  background-color: var(--dark-medium);
+  grid-area: figma;
+}
+
+.tecnologies__figma--img {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.tecnologies__nodejs {
+  position: relative;
+  background-color: var(--dark-medium);
+  grid-area: node;
+}
+
+.tecnologies__nodejs--img {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}

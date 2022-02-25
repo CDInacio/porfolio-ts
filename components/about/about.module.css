@@ -9,7 +9,7 @@
 
 .about__description {
   margin-top: 12%;
-  opacity: 0.8;
+  opacity: 0.9;
   width: 50%;
 }
 
@@ -18,14 +18,14 @@
 }
 
 .about__title span {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 2.25rem;
   z-index: 999;
   position: relative;
 }
 
 .about__title span::before {
-  content: "";
+  content: '';
   position: absolute;
   /* border-radius: 4px; */
   background: var(--primary);
@@ -44,7 +44,6 @@
 .about__personal {
   margin-top: 10%;
   width: 60%;
-  opacity: 1;
 }
 
 .about__info {
@@ -54,7 +53,7 @@
 }
 
 .about__info span {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
 }
