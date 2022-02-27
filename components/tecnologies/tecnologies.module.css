@@ -80,8 +80,8 @@
   }
 }
 
-@media (max-width: 339px) {
+@media (max-width: 400px) {
   .section__subtitle {
-    top: 6%;
+    top: 12%;
   }
 }
