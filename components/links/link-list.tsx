@@ -1,26 +1,43 @@
 import React from 'react'
 
-import LinkItem from './link-item'
+import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
+import { BsInstagram, BsGithub } from 'react-icons/bs'
+
 import classes from './link-list.module.css'
+import Link from 'next/link'
 
 const LinkList: React.FC = () => {
-  const SOCIALS = [
-    { id: 1, name: 'facebook' },
-    { id: 2, name: 'github' },
-    { id: 3, name: 'instagram' },
-    { id: 4, name: 'linkedin' }
-  ]
-
   return (
-    <>
-      <div className={classes.links}>
-        {SOCIALS.map(social => (
-          <div key={social.id} className={classes.links__link}>
-            <LinkItem name={social.name} />
-          </div>
-        ))}
-      </div>
-    </>
+    <ul className={classes.links}>
+      <li>
+        <Link href="https://www.facebook.com/claudio.dantas.1253/">
+          <a target="_blank">
+            <FaFacebookF className={classes.icon} />
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href="#">
+          <a target="_blank">
+            <FaLinkedinIn className={classes.icon} />
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href="#">
+          <a target="_blank">
+            <BsInstagram className={classes.icon} />
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href="https://github.com/CDInacio?tab=repositories">
+          <a target="_blank">
+            <BsGithub className={classes.icon} />
+          </a>
+        </Link>
+      </li>
+    </ul>
   )
 }
 
