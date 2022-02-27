@@ -5,7 +5,7 @@ import classes from './about.module.css'
 
 const About: React.FC = () => {
   return (
-    <section className={classes.about}>
+    <section id="about" className={classes.about}>
       <div className={classes['about__sectionOne']}>
         <div className={classes['about__title']}>
           <h1>

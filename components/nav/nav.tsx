@@ -54,15 +54,21 @@ const Nav: React.FC = () => {
           </div>
 
           <div className={classes['menu-items']}>
-            <li>
-              <a href="#">Sobre</a>
-            </li>
-            <li>
-              <a href="#">Tecnologias</a>
-            </li>
-            <li>
-              <a href="#">Projetos</a>
-            </li>
+            <Link href="#about">
+              <li>
+                <a>Sobre</a>
+              </li>
+            </Link>
+            <Link href="#tecs">
+              <li>
+                <a>Tecnologias</a>
+              </li>
+            </Link>
+            <Link href="#projects">
+              <li>
+                <a>Projetos</a>
+              </li>
+            </Link>
           </div>
         </div>
       </div>
@@ -73,21 +79,21 @@ const Nav: React.FC = () => {
               about && classes.highlighted
             }`}
           >
-            <Link href="#">Sobre</Link>
+            <Link href="#about">Sobre</Link>
           </li>
           <li
             className={`${classes['nav__link']} ${
               tecnologies && classes.highlighted
             }`}
           >
-            <Link href="#">Tecnologias</Link>
+            <Link href="#tecs">Tecnologias</Link>
           </li>
           <li
             className={`${classes['nav__link']} ${
               projects && classes.highlighted
             }`}
           >
-            <Link href="#">Projetos</Link>
+            <Link href="#projects">Projetos</Link>
           </li>
         </ul>
       </nav>

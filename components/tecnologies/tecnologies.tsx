@@ -10,7 +10,7 @@ import classes from './tecnologies.module.css'
 
 const Tecnologies: React.FC = () => {
   return (
-    <section className={classes.container}>
+    <section id="tecs" className={classes.container}>
       <h1 className={classes['section__title']}>
         <span>TECNOL</span>OGIAS
       </h1>

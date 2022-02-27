@@ -12,7 +12,7 @@ import Link from 'next/link'
 
 const Projects: React.FC = () => {
   return (
-    <section className={classes.container}>
+    <section id="projects" className={classes.container}>
       <h1 className={classes['section__title']}>
         <span>Proje</span>tos
       </h1>

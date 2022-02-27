@@ -59,9 +59,10 @@
 }
 
 .navbar .nav-container a {
+  cursor: pointer;
   text-decoration: none;
   color: var(--light);
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.2rem;
   padding: 0.7rem;
 }
