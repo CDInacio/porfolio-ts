@@ -17,14 +17,14 @@ const LinkList: React.FC = () => {
         </Link>
       </li>
       <li>
-        <Link href="#">
+        <Link href="https://www.linkedin.com/in/claudio-vitor-dantas/">
           <a target="_blank">
             <FaLinkedinIn className={classes.icon} />
           </a>
         </Link>
       </li>
       <li>
-        <Link href="#">
+        <Link href="https://www.instagram.com/claudiovdsi/">
           <a target="_blank">
             <BsInstagram className={classes.icon} />
           </a>
