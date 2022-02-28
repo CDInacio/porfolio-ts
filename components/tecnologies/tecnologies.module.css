@@ -74,14 +74,8 @@
   }
 }
 
-@media (max-width: 424px) {
+@media (max-width: 422px) {
   .section__subtitle {
-    top: 9%;
-  }
-}
-
-@media (max-width: 400px) {
-  .section__subtitle {
-    top: 12%;
+    top: 15%;
   }
 }
