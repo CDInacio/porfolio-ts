@@ -6,9 +6,11 @@ import classes from './hero.module.css'
 const Hero: React.FC = () => {
   return (
     <section className={classes.hero}>
-      <p className={classes['hero__name--abs']}>Olá, eu sou</p>
-      <h1 className={classes['hero__name']}>CLÁUDIO DANTAS</h1>
-      <p className={classes['hero__occuppation']}>Desenvolvedor Web</p>
+      <div className={classes['hero__container']}>
+        <p className={classes['hero__name--abs']}>Olá, eu sou</p>
+        <h1 className={classes['hero__name']}>CLÁUDIO DANTAS</h1>
+        <p className={classes['hero__occuppation']}>Desenvolvedor Web</p>
+      </div>
       <LinkList />
     </section>
   )
