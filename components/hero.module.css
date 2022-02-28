@@ -22,15 +22,20 @@
 .hero__name--abs {
   z-index: 1;
   font-size: 1.3rem;
-  position: absolute;
-  top: 42%;
   text-shadow: 1px 1px 5px var(--dark);
   /* font-weight: bold; */
 }
 
+.hero__container {
+  line-height: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
 .hero__occuppation {
-  position: absolute;
-  top: 52%;
   font-size: 1.3rem;
   text-shadow: 1px 1px 5px var(--dark);
   font-weight: normal;
